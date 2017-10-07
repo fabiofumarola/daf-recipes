@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+  ports:
+    - "5432:5432"
+  environments:
+    - POSTGRES_PASSWORD=changeme
+
+networks:
+  default:
+    driver: bridge
